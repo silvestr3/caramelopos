@@ -1,0 +1,6 @@
+[submodule "caramelo2-api"]
+	path = caramelo2-api
+	url = https://github.com/silvestr3/caramelo2-api
+[submodule "caramelo2-public"]
+	path = caramelo2-public
+	url = https://github.com/silvestr3/caramelo2-public
