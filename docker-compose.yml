@@ -29,13 +29,14 @@ services:
 
   caramelo-web:
     container_name: caramelo-web
+    env_file: ".env"
     build:
       context: ./caramelo2-public
       dockerfile: Dockerfile
     environment:
       - API_URL=http://caramelo-api:8000
       - NEXTAUTH_SECRET=9831762987369182
-      - NEXTAUTH_URL=http://demo.caramelopos.com
+      - NEXTAUTH_URL=${PUBLIC_URL}
       - PORT=3000
     ports:
       - "3000:3000"
